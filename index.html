@@ -6,26 +6,214 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Agdasima&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" type="x-icon" href="img/icon.png" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Aj Anik | Portfolio Website</title>
+    <link rel="icon" href="img/icon1.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Aj Anik - Portfolio</title>
   </head>
   <body>
-    <section>
-      <div class="header">
-        <img src="img/logo-removebg.png" alt="Logo" class="logo" />
-        <div class="navbar">
-          <ul>
-            <li><a href="#" class="black-color">Home</a></li>
-            <li><a href="#" class="black-color">About Me</a></li>
-            <li><a href="#" class="black-color">My showcase</a></li>
-            <li><a href="#" class="black-color">Hire Me</a></li>
-          </ul>
+    <!-- navigantion bar start -->
+    <header>
+      <div class="logo">
+        <a href="#one-img"
+          ><img src="img/logo-removebg.png" alt="Your Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#one-img">Home</a></li>
+          <li><a href="#my-ab">About Me</a></li>
+          <li><a href="#my-showcase">My Showcase</a></li>
+          <li><a href="#cotact">Hire Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navigantion bar end -->
+    <!-- Picture and text section start -->
+    <section class="about-section">
+      <div class="about-image">
+        <img src="img/img-for-website.png" alt="Your Picture" id="one-img" />
+      </div>
+      <div class="about-text">
+        <p class="hello">Hello, My name is</p>
+        <h1>Aj Anik</h1>
+        <h3>
+          <span class="changing-text"></span>
+        </h3>
+        <p class="intro">
+          a seasoned graphic designer, Photoshop editor, and WordPress theme
+          developer with 6 years of experience. I bring ideas to life through
+          captivating visuals, masterfully manipulate images, and build
+          functional websites. Keeping up with the latest design trends fuels my
+          passion for delivering top-notch solutions.
+        </p>
+      </div>
+    </section>
+    <!-- Picture and text section end -->
+
+    <!-- my ability tree box start -->
+    <h1 id="my-ab">My Abilities</h1>
+    <h1 class="my-ab-solo">What can I do?</h1>
+    <div class="boxes">
+      <div class="box">
+        <img src="img/adjest-icon1.png" alt="Image 1" class="box-image" />
+        <h1>Photoshop Editor</h1>
+        <p>
+          I am a highly skilled Photoshop editor with six years of experience,
+          specializing in photo retouching, image manipulation, and graphic
+          design. Proficient in a wide range of Photoshop tools and techniques,
+          I have a keen eye for detail and a deep understanding of visual
+          aesthetics.
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="img/web-programming-icon.png"
+          alt="Image 1"
+          class="box-image"
+        />
+        <h1>Web Developer</h1>
+        <p>
+          I am a highly skilled WordPress web developer with three years of
+          experience in HTML, CSS, JavaScript, Bootstrap, React.js, PSD to HTML,
+          and WordPress. With a strong foundation in web development languages
+          and frameworks, I possess the expertise needed to create visually
+          appealing and dynamic websites.
+        </p>
+      </div>
+      <div class="box">
+        <img src="img/video-editor-icon.png" alt="Image 1" class="box-image" />
+        <h1>Video Editor</h1>
+        <p>
+          I am an experienced video editor with six years of professional
+          experience, specializing in crafting compelling visual stories. With a
+          keen eye for detail and a deep understanding of video editing
+          techniques, I bring a unique creative perspective to every project.
+        </p>
+      </div>
+    </div>
+
+    <!-- my ability tree box end -->
+
+    <!-- My Showcase section start -->
+    <section class="showcase-section">
+      <h1 id="my-showcase">My Showcase</h1>
+      <h3>Check out my works</h3>
+      <div class="showcase-images">
+        <div class="showcase-image">
+          <a href="page1.html">
+            <img src="img/showcase1.jpg" alt="Showcase Image 1" />
+            <p>Photo Editing Showcase</p>
+            <div class="image-overlay">
+              <p>Photoshop Portrait Editing</p>
+            </div>
+          </a>
+        </div>
+        <div class="showcase-image">
+          <a href="page2.html">
+            <img src="img/showcase2.jpg" alt="Showcase Image 2" />
+            <p>Web Development Showcase</p>
+            <div class="image-overlay">
+              <p>Wordpress Theme Development</p>
+            </div>
+          </a>
+        </div>
+        <div class="showcase-image">
+          <a href="page3.html">
+            <img src="img/showcase3.jpg" alt="Showcase Image 3" />
+            <p>Video Editing Showcase</p>
+            <div class="image-overlay">
+              <p>Premiere Pro Video Editing</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
+    <!-- My Showcase section end -->
+
+    <!-- My cotact section start -->
+    <section class="contact-section">
+      <h1 id="cotact">Contact</h1>
+      <h3>Connect with me</h3>
+      <div class="contact-boxes">
+        <div class="contact-box">
+          <div class="contact-box-content">
+            <div class="contact-image">
+              <img src="img/cotact--.jpg" alt="Contact Image" />
+            </div>
+            <div class="contact-details">
+              <h2>Aj Anik</h2>
+              
+              <p>
+                Are You Looking For Your Business Online Presence? I am here.
+              </p>
+              <ul class="contact-info">
+                <li>
+                  <i class="fas fa-envelope" style="color: #00a8ff;"></i> ajanikworld@gmail.com
+                </li>
+                <li>
+                  <i class="fas fa-phone" style="color: #00a8ff;"></i> +8801715551734
+                </li>
+                <li>
+                  <i class="fa-brands fa-linkedin" style="color: #00a8ff;"></i> https://www.linkedin.com/in/aj-anik1-1000a8252/
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contact-box">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name" class="note">Your Name*</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="note">Your Email*</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject" class="note">Subject*</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message" class="note">Your Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+    </section>
+    <!-- My cotact section End -->
+
+    <!-- My footer section start -->
+    <footer>
+      <div class="footer-content">
+        <h4>Find with me</h4>
+        <div class="social-icons">
+          <a href="https://example.com" target="_blank">
+            <img src="img/facebook.png" alt="Social Icon 1" />
+          </a>
+          <a href="https://example.com" target="_blank">
+            <img src="img/twitter (1).png" alt="Social Icon 2" />
+          </a>
+          <a href="https://example.com" target="_blank">
+            <img src="img/linkedin (1).png" alt="Social Icon 3" />
+          </a>
+          <a href="https://example.com" target="_blank">
+            <img src="img/instagram (1).png" alt="Social Icon 4" />
+          </a>
+          <a href="https://example.com" target="_blank">
+            <img src="img/youtube (1).png" alt="Social Icon 5" />
+          </a>
+        </div>
+        <p>© Copyright 2018 - 2023 | All right reserved</p>
+      </div>
+    </footer>
+    
+    <!-- My footer section end -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/004940ffd2.js" crossorigin="anonymous"></script>
   </body>
 </html>
