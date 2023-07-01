@@ -1,0 +1,483 @@
+html {
+  scroll-behavior: smooth;
+}
+/** navigation and logo end **/
+*,
+** {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 16px;
+  color: black;
+  font-size: 20px;
+  transition: 0.5s;
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav a:hover {
+  background-color: #00a8ff;
+  color: white;
+  border-radius: 5px;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.hide-on-scroll {
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.show-on-scroll {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+/** navigation and logo end **/
+
+/** picture and text section start **/
+.about-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  background-image: linear-gradient(225deg, #ffffff 0%, #e7ecef 100%);
+}
+
+.about-image img {
+  width: 750px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.about-text {
+  flex-grow: 1;
+  font-family: "Roboto", sans-serif;
+  margin-right: 100px; /* Add this line to create space on the right side */
+  margin-left: 100px; /* Add this line to create space on the left side */
+}
+
+.about-text h1 {
+  font-size: 50px;
+  margin-bottom: -17px;
+}
+.about-text h3 {
+  color: #00a8ff;
+}
+.about-text .hello {
+  font-size: 25px;
+}
+.about-text .intro {
+  font-size: 22px;
+  color: #424242;
+}
+.about-section .changing-text {
+  display: inline-block;
+  overflow: hidden;
+}
+.about-text h3 {
+  color: #00a8ff;
+  height: 48px; /* Adjust the height value as needed */
+}
+.about-text .hello {
+  margin-bottom: 15px; /* Adjust the margin value to decrease the space */
+}
+
+.about-text h1 {
+  margin-top: 10px; /* Adjust the margin value to decrease the space */
+}
+
+/** Picture and text section end **/
+
+/** my ability tree box start **/
+#my-ab {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -12px;
+  font-size: 55px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0px;
+  color: #00a8ff;
+}
+.my-ab-solo {
+  font-size: 30px;
+  text-align: center;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 132px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.box {
+  width: 340px;
+  height: 366px;
+  padding: 20px;
+  margin: 0 30px;
+  background-color: transparent;
+  background-image: linear-gradient(225deg, #ffffff 0%, #e7ecef 100%);
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(173, 172, 172, 0.5);
+}
+
+.box h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 68px;
+}
+
+.box p {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+}
+.box {
+  position: relative;
+}
+
+.box .box-image {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55px; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+}
+
+/** my ability tree box end **/
+
+/* My Showcase section */
+#my-showcase {
+  margin-bottom: -19px;
+  font-size: 55px;
+}
+.showcase-section {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: -26px;
+}
+
+.showcase-section h1 {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  color: #00a8ff;
+  margin-bottom: 10px;
+}
+
+.showcase-section h3 {
+  font-size: 24px;
+  color: #424242;
+  margin-bottom: 106px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.showcase-images {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.showcase-image {
+  position: relative;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.showcase-image img {
+  width: 600px;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  text-decoration: none;
+}
+
+.showcase-image .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 338px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 168, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.5s;
+  text-decoration: none;
+}
+
+.showcase-image .image-overlay p {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.showcase-image:hover img {
+  opacity: 0.9;
+  text-decoration: none;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.showcase-image:hover .image-overlay {
+  opacity: 1;
+  text-decoration: none;
+}
+.showcase-image a {
+  color: black;
+  font-size: 20px;
+  font-family: "Inconsolata", monospace;
+  text-decoration: none;
+  font-weight: bold;
+}
+/** My showcase section end **/
+
+/** My cotact section first box start **/
+.contact-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact-section h1 {
+  font-size: 55px;
+  color: #00a8ff;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: -21px;
+}
+.contact-section h3 {
+  font-size: 30px;
+  font-family: "Ysabeau SC", sans-serif;
+  margin-bottom: 90px;
+}
+.contact-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 30px;
+  gap: 65px;
+  margin-bottom: 20px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(173, 172, 172, 0.5);
+}
+
+.contact-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  background-image: linear-gradient(225deg, #ffffff 0%, #e7ecef 100%);
+  padding: 30px;
+  width: 285px;
+  border-radius: 20px;
+  height: 560px;
+}
+
+.contact-image img {
+  width: 282px;
+  margin-bottom: -13px;
+}
+
+.contact-details {
+  text-align: left;
+  color: #000000;
+  font-family: "Ubuntu", sans-serif;
+}
+.contact-details h2 {
+  text-align: left;
+  color: #00a8ff;
+  font-size: 38px;
+  margin-bottom: -8px;
+}
+.contact-details p {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.contact-info li i {
+  margin-right: 13px;
+}
+
+.contact-box:last-child {
+  background-color: transparent;
+  background-image: linear-gradient(225deg, #ffffff 0%, #e7ecef 100%);
+  padding: 20px;
+  width: 800px;
+  box-shadow: 0px 0px 10px 0px rgba(173, 172, 172, 0.5);
+}
+
+/** My cotact section first box End **/
+/** My cotact section second box start **/
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 774px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in the width */
+  border-radius: 0px;
+  font-size: 17px;
+  font-family: "Ubuntu";
+  transition: 0.3s;
+}
+.form-group input:hover{
+  box-shadow: 0px 0px 10px 0px rgba(173, 172, 172, 0.5);
+}
+.form-group textarea:hover{
+  box-shadow: 0px 0px 10px 0px rgba(173, 172, 172, 0.5);
+}
+.form-group textarea {
+  min-width: 774px;
+  max-width: 774px;
+  min-height: 200px;
+  max-height: 268px;
+}
+
+button[type="submit"] {
+  padding: 12px 28px;
+  background-color: #00a8ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.5s;
+}
+
+button[type="submit"]:hover {
+  background-color: #00d49f;
+  box-shadow: 0px 0px 10px 0px rgba(173, 172, 172, 0.5);
+}
+.note{
+  font-family: "ubuntu", sans-serif;
+  font-weight: bold;
+  color: #646464;
+}
+/** My cotact section second box end **/
+
+/** footer section start **/
+footer {
+  background-color: #e5f5fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #00a8ff;
+  font-family: 'Agdasima', sans-serif;
+  letter-spacing: 4px;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+.footer-content p {
+  font-size: 18px;
+  color: #777777;
+  margin-bottom: 0;
+  font-family: cursive;
+}
+.social-icons img {
+  width: 38px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  transform: translateY(30%); /* Move the image upward initially */
+  transition: transform 0.4s ease;
+  box-shadow: 2px 2px 16px rgb(110, 110, 110);
+  border-radius: 50%;
+}
+
+.social-icons img:hover {
+  transform: translateY(0); /* Move the image back to its original position */
+  box-shadow: 2px 2px 16px #00a8ff;
+}
+
+
+/** footer section end **/
